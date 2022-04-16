@@ -1,104 +1,49 @@
-// - Створити змінні. Присвоїти кожному з них значення: 'hello','owu','com', 'ua', 1, 10, -999, 123, 3.14, 2.7, 16, true, false.
-//     Вивести кожну змінну за допомогою: console.log , alert, document.write
+// 5. Напишіть код, який вираховує площу прямокутника висотою 23см. (змінна height) та шириною 10см (змінна width).
+// Значення площі зберігати в змінній s.
 
-// let a = 'hello';
-// let b = 'owu';
-// let c = 'com';
-// let d = 'ua';
-// let e = '1';
-// let f = '10';
-// let g = '-999';
-// let h = '123';
-// let i = '3.14';
-// let j = 2.7;
-// let k = 16;
-// let l = true;
-// let m = false;
+// let height = 23;
+// let width = 10;
 //
-// console.log(a,b,c,d,e,f,g,h,i,j,k,l,m);
-// document.write(`<div>${a} ${b} ${c}</div>`);
-// alert(`${a} ${b} ${c} ${i} ${m}`);
-
-// - Створити об'єкт book з наступними полями :
-// назва, (тип string)
-// кількість сторінок (числовий тип),
-// жанр (string)
-
-// let book = {
-//     name : 'Геометрія 11 клас',
-//     pages : 300,
-//     genre : 'Хоррор'
-// }
-
-// - Створити об'єкт book з наступними полями :
-// назва, (тип string)
-// кількість сторінок (числовий тип),
-// жанр (string)
-// автори (тип - масив, кожен елемент масиву - це стрінга)
-
-// let book = {
-//     name: 'Геометрія 11 клас',
-//     pages: 300,
-//     genre: 'Хоррор',
-//     authors: ['1','2','3']
-// }
-
-// - Створити 3 змінних firstName, middleName, lastName, наповнити їх своїм ПІБ.
-//     З'єднати їх в одну змінну person (Не об'єкт, просто за допомоги конкатенації)
-
-// let firstName = 'Oleg';
-// let middleName = 'Andriiovich';
-// let lastName = 'Andriienko';
+// let s = height*width;
 //
-// let person = `${lastName} ${firstName} ${middleName}`;
-// console.log(person);
+// console.log(s);
 
-// - За допомогою 3х різних prompt() отримати 3 слова які являються вашими Імям, По-Батькові та роками. та вивести в консоль
+// 6. Напиши код, який знаходить об'єм циліндра заввишки 10м (змінна heightC) та діаметром основи 4м (dC),
+// результат помістіть у змінну v.
 
-// let firstName = prompt();
-// let middleName = prompt();
-// let lastName = prompt();
+// let heightC = 10;
+// let dC = 4;
 //
-// console.log(firstName,middleName,lastName);
-
-// - За допомогою оператора typeof визначити типи наступних змінних та вивести їх в консоль.
-//     let a = 100; let b = '100'; let c = true;
-
-// let a = 100;
-// let b = '100';
-// let c = true;
+// let v = heightC*dC;
 //
-// console.log(typeof(a))
-// console.log(typeof(b))
-// console.log(typeof(c))
+// console.log(v);
 
-// - Створити масив об'єктів з назвою books з наступними полями  - назва, кількість сторінок, жанр, автори.
-// Вивести кожну книгу як окремий об'єкт
+// - Визначити відповідний оператор в виразах що б вийшов відповідний результат.
+//     В однакових виразах не використовувати однакові оператори!!!
+//     5 ? 6 -> true
+// 5 ? 6 -> false
+// 5 ? 6 -> false
+// 5 ? 6 -> false
+// 10 ? 10 -> true
+// 10 ? 10 -> true
+// 10 ? 10 -> false
+// 10 ? 10 -> false
+// 10 ? 10 -> false
+// 123 ? '123' -> false
+// 123 ? '123' -> true
 
-// let books = [
-//     {
-//         name: 'Алгебра',
-//         pages: 400,
-//         genre: 'Horror',
-//         authors: ['1','2','3']
-//     },
-//     {
-//         name: 'Геометрія',
-//         pages: 400,
-//         genre: 'Horror',
-//         authors: ['1','2']
-//     },
-//     {
-//         name: 'Фізика',
-//         pages: 400,
-//         genre: 'Horror',
-//         authors: ['1','2','3']
-//     }
-// ]
-//
-// console.log(books[0]);
-// console.log(books[1]);
-// console.log(books[2]);
+console.log(5<6);
+console.log(5>6);
+console.log(5>=6);
+console.log(5===6);
+console.log(10==10);
+console.log(10===10);
+console.log(10!==10)
+console.log(10<10);
+console.log(10>10);
+console.log(123==='123');
+console.log(123==+'123');
+
 
 
 
