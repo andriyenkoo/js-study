@@ -1,93 +1,121 @@
-// - Є змінна х, якій ви надаєте довільне числове значення.
-//     Якщо змінна x не дорівнює нулю, виведіть 'Вірно', інакше виведіть 'Невірно'.
-//     Перевірте  скрипт при x, що дорівнює 1, 0, -3
+// - За допомогою циклу for і document.write() вивести 10 блоків div c довільним текстом всередині
 
-// let x = 200;
-// if (x === 0) {
-//     console.log("Вірно")
-// } else {
-//     console.log("Не вірно")
+// for (let i = 0; i < 10; i++) {
+//     document.write('<p>hello</p>');
 // }
 
-// - Дано змінну time яка рівна числу від 0 до 59. Потрібно написати код, який перевірить, до якої четверті години попадає число
-// (в першу, другу, третю или четверту частину години).
+// - За допомогою циклу for і document.write() вивести 10 блоків div c довільним текстом і індексом всередині
 
-// let time = +prompt('time?')
+// for (let i = 1; i <= 10; i++) {
+//     document.write(`<p>hello ${i}</p>`);
+// }
+
+// - За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом всередині.
+
+// i = 0;
+// while (i < 20) {
+//     i++;
+//     document.write('<h1>hello</h1>')
+// }
+
+// - За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом і індексом всередині.
+
+// i = 0;
+// while (i < 20) {
+//     i++;
+//     document.write(`<h1>hello ${i}</h1>`)
+// }
+
+// - Використовуючи данні з масиву, за допомоги document.write та циклу
+// побудувати структуру по шаблону
+
+// let listOfItems = ['html', 'css', 'javascript', 'mysql', 'mongodb', 'react', 'angular', 'node.js'];
 //
-// if (time >= 1 && time <= 15) {
-//     console.log("Persha chvert`")
-// } else if (time > 15 && time < 30) {
-//     console.log('Druga chvert')
-// } else if (time >= 30 && time < 45) {
-//     console.log('Tretya chvert')
-// } else if (time >= 45 && time <= 60) {
-//     console.log('Chetverta chvert')
-// } else {
-//     console.log('Oops, problem :(')
-// }
-
-// - У змінній day дано якесь число від 1 до 31. Потрібно визначити, у яку половину(декаду) місяця потрапляє це число (у першу, другу чи третю).
-
-// let day = +prompt('?')
+// document.write('<ul>');
 //
-// if (day > 0 && day <= 11) {
-//     console.log('Persha dekada')
-// } else if (day > 11 && day <= 20) {
-//     console.log('Druga dekada')
-// } else if (day > 20 && day <= 31) {
-//     console.log('Tretya dekada')
-// } else {
-//     console.log('Oops, trouble.')
-// }
-
-// - Скласти розклад на тиждень за домопоги switch.
-//     Користувач вводить порядковий номер дня тижня і на екрані відображається інфа що заплановано
-//     на цей день (можна замість плану на день, назву дня англійською).
-
-// switch (+prompt('day number')) {
-//     case 1:
-//         console.log('Monday');
-//         break;
-//     case 2:
-//         console.log('Tuesday');
-//         break;
-//     case 3:
-//         console.log('Wednesday');
-//         break;
-//     case 4:
-//         console.log('Thursday');
-//         break;
-//     case 5:
-//         console.log('Friday');
-//         break;
-//     case 6:
-//         console.log('Saturday');
-//         break;
-//     case 7:
-//         console.log('Sunday');
-//         break;
-//     default:
-//         console.log('Trouble.')
-// }
-
-// - Користувач вводить або має два числа.
-//     Потрібно знайти та вивести максимальне число з тих двох .
-//     Також потрібно врахувати коли введені рівні числа.
-
-// let firstNumber = +prompt('first number?')
-// let secondNumber = +prompt('second number?')
+//     for (let list of listOfItems) {
+//         document.write(`<li>${list}</li>`)
+//     }
 //
-// if (firstNumber > secondNumber) {
-//     console.log('Перше число більше ніж друге')
-// } else if (secondNumber > firstNumber) {
-//     console.log('Друге число більше ніж перше')
-// } else if (secondNumber === firstNumber) {
-//     console.log('Числа одинакові')
+// document.write('</ul>');
+
+// Використовуючи данні з масиву, за допомоги document.write та циклу
+// побудувати структуру по шаблону  Зробити адекватну стилізацію
+// Великими літерами прописанні властивості об'єкту які потрібно впровадити в шаблон
+
+// let products = [
+//     {
+//         title: 'milk',
+//         price: 22,
+//         image: 'https://www.mcqueensdairies.co.uk/wp-content/uploads/2019/02/Mcqueens_1litre_whole_organic-300x300-3.jpg'
+//     },
+//     {
+//         title: 'juice',
+//         price: 27,
+//         image: 'https://images-na.ssl-images-amazon.com/images/I/61jL2GCuKLL._SX679_PIbundle-24,TopRight,0,0_AA679SH20_.jpg'
+//     },
+//     {
+//         title: 'tomato',
+//         price: 47,
+//         image: 'https://dictionary.cambridge.org/ru/images/thumb/tomato_noun_001_17860.jpg?version=5.0.74'
+//     },
+//     {
+//         title: 'tea',
+//         price: 15,
+//         image: 'https://yogiproducts.com/wp-content/uploads/2009/03/YT-US-CAR-RelaxedMind-C23-202201-V2-3DFront_withGlow-300DPI-1.png'
+//     },
+// ];
+//
+// document.write('<div class="product-card">')
+//     i = 0;
+//     for (let product of products) {
+//         i++;
+//         document.write(`<h3 class="product-title">${product.title} Price - ${product.price}</h3>`)
+//         document.write(`<img src="${product.image}" alt="product" class="product-image">`)
+//     }
+// document.write('</div>')
+
+
+// за допомоги циклу вивести:
+
+// let users = [
+//     {name: 'vasya', age: 31, status: false},
+//     {name: 'petya', age: 30, status: true},
+//     {name: 'kolya', age: 29, status: true},
+//     {name: 'olya', age: 28, status: false},
+//     {name: 'max', age: 30, status: true},
+//     {name: 'anya', age: 31, status: false},
+//     {name: 'oleg', age: 28, status: false},
+//     {name: 'andrey', age: 29, status: true},
+//     {name: 'masha', age: 30, status: true},
+//     {name: 'olya', age: 31, status: false},
+//     {name: 'max', age: 31, status: true}
+// ];
+
+//     - користувачів зі статусом true
+
+// for (let i = 0; i < users.length; i++) {
+//     const user = users[i];
+//     if(user["status"] === true ) {
+//         console.log(user);
+//     }
 // }
 
+// - користувачів зі статусом false
 
+// for (let i = 0; i < users.length; i++) {
+//     const user = users[i];
+//     if(user["status"] === false) {
+//         console.log(user);
+//     }
+// }
 
+// - користувачів які старші за 30 років
 
-
-
-
+// for (let i = 0; i < users.length; i++) {
+//     const user = users[i];
+//     if(user["age"] >= 30 ) {
+//         console.log(user);
+//     }
+//
+// }
